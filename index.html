@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<title>Develop for Touch Friendliness</title>
+<!-- CSS:LIB -->
+<link href="topcoat/css/topcoat-mobile-light.css" rel="stylesheet" type="text/css">
+<link href="css/prettify.css" rel="stylesheet" type="text/css">
+<link href="css/keypoint.css" rel="stylesheet" type="text/css">
+<link href="css/fw.misc.css" rel="stylesheet" type="text/css">
+<!-- CSS:CUSTOM -->
+<link href="css/slides.css" rel="stylesheet" type="text/css">
+</head>
+<body class="fw">
+<!-- BRANDING -->
+<img id="logo" src="images/logo.svg" alt=""/>
+<!-- WRAPPER -->
+<div id="wrapper"></div>
+<!-- SLIDES -->
+<div id="slides">
+
+<!-- SLIDE:COVER -->
+<div class="slide">
+	<h1 class="">Develop for <span class="c txtUpperCase">Touch Friendliness</span></h1>
+</div>
+
+<!-- SLIDE -->
+<div class="slide">
+    <h1>About</h1>
+    <div class="aleft">
+		<p>Human behaviour changes rapidly and foundamentally during last decade thanks to new technology and an explosion of devices.<p>
+		<p>iPhone, Wii, Kinetic, Siri, etc.<p>
+		<p>One of the key interaction type afforded by those web capable devices are touch interactivity. So big of a impact that it's part of our daily human behaviour to expect everything can be interacted with touch.<p>
+		<p>As this human behavior becomes more dominant in web, we should prepare ourselves, or even optimize towards touch inputs, so our audiences has a better experience.</p>
+    </div>
+</div>
+
+<!-- SLIDE -->
+<div class="slide">
+	<h1>Current Situation on the Web</h1>
+	<p>Altough touch input method is becoming more popular, things are not so promising on the web. Just try using you device to do all the web surfing for a week and you'll know how bad it is.</p>
+	<p>Problems:</p>
+	<ol>
+		<li>Legacy - most websites done until recently almots never consider touch inputs</li>
+		<li>Backward compatibility - due to the issue above, device engineers decided to provide legacy support, which to some degree hinders web developers and businesses to invest in optimising for new input methods.</li>
+	</ol>
+	<p>Let's see what we can do</p>
+</div>
+
+<!-- SLIDE -->
+<div class="slide">
+    <h1>CSS</h1>
+</div>
+
+<!-- SLIDE -->
+<div class="slide">
+    <h1>JS</h1>
+</div>
+
+<!-- SLIDE -->
+<div class="slide">
+    <h1>FastClick</h1>
+    <h2><a href="https://github.com/ftlabs/fastclick" target="_system">https://github.com/ftlabs/fastclick</a></h2>
+    <p style="padding: 0 60px;">“FastClick uses document.createEvent to fire a synthetic click event as soon as touchend is fired. It then suppresses the additional click event created by the browser.”</p>
+</div>
+
+<!-- SLIDE -->
+<div class="slide">
+    <h1>Use CSS Sprite Sheets</h1>
+	<pre class="prettyprint">
+.icon {
+  width: 14px; height: 14px;
+  background-image: url("glyphicons-halflings.png");
+}
+.icon-glass {
+  background-position: 0 0;
+}
+.icon-music {
+  background-position: -24px 0;
+}
+.icon-search {
+  background-position: -48px 0;
+}
+	</pre>
+</div>
+
+<!-- SLIDE -->
+<div class="slide">
+    <h1>Optimizing Images</h1>
+    <ul>
+        <li>Use the right image size (don't scale images in HTML)</li>
+        <li>Host images on scalable, distributed systems (i.e. S3)</li>
+        <li>Avoid 404s for images</li>
+		<xmp class="prettyprint" style="text-decoration: line-through">
+<img src="{{pic}}" onerror='this.src="nopic.jpg"'/>
+		</xmp>
+    </ul>
+</div>
+
+<!-- SLIDE -->
+<div class="slide">
+    <h1>Minimizing Browser Reflows</h1>
+    <ul>
+        <li>Reduce the number of DOM elements</li>
+        <li>Minimize access to the DOM</li>
+        <li>Update elements "offline" before reinserting into DOM</li>
+        <li>Avoid tweaking layout in JavaScript</li>
+    </ul>
+</div>
+
+<!-- SLIDE -->
+<div class="slide">
+	<h1>Fast</h1>
+	<pre class="prettyprint">
+var $backButton = $("#header a.back");
+$backButton.on("click", clickHandler);
+$backButton.css("color", "white");
+$backButton.css("text-decoration", "none");
+$backButton.attr("href", "#");
+	</pre>
+</div>
+
+<!-- SLIDE:SUMMARY -->
+<div class="slide summary">
+    <h1>Summary</h1>
+    <ol>
+        <li>key point 1</li>
+        <li>key point 2</li>
+        <li>key point 3</li>
+        <li>key point 4</li>
+        <li>key point 5</li>
+    </ol>
+</div>
+</div><!-- /SLIDES -->
+
+<!-- MENU -->
+<a id="menu-btn" class="topcoat-icon-button--quiet"><span class="topcoat-icon topcoat-icon--menu-stack"></span></a>
+<div id="menu">
+    <div class="header">
+        <div class="title">Slides Menu</div>
+    </div>
+    <div class="topcoat-list__container scroller cf">
+        <ol id="list" class="topcoat-list"></ol>
+    </div>
+</div><!-- /MENU -->
+
+<!-- JS:LIB -->
+<script src="js/fastclick.js"></script>
+<script src="js/prettify.js"></script>
+<script src="js/swipeview.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/keypoint.js"></script>
+<!-- JS:CUSTOM -->
+<script src="js/slides.js"></script>
+</body>
+</html>
