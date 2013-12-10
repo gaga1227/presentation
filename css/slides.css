@@ -1,1 +1,5 @@
 /* custom styles in slides */
+
+/* cover video */
+.slide.cover { background:#000; }
+.slide.cover video { display:block; width:90%; height:90%; position:absolute; top:5%; left:5%; }
