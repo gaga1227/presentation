@@ -17,6 +17,14 @@ a {
     color:inherit;
 }
 
+b, .bold {
+    font-weight: 400;
+}
+
+strong, .strong {
+    font-weight: 600;
+}
+
 h1,
 h2 {
     color: #222;
@@ -35,7 +43,7 @@ h2 {
     font-weight: 200;
     font-size: 48px;
 }
-.small { 
+.small {
 	font-size:0.6em;
 }
 

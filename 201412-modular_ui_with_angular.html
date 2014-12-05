@@ -3,39 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-<title>Develop for Touch Friendliness</title>
+<title>Modular UI Development with Angular.js</title>
 <!-- CSS:LIB -->
-<link href="topcoat/css/topcoat-mobile-light.css" rel="stylesheet" type="text/css">
-<link href="css/prettify.css" rel="stylesheet" type="text/css">
+<link href="topcoat/css/topcoat-mobile-light.min.css" rel="stylesheet" type="text/css">
 <link href="css/keypoint.css" rel="stylesheet" type="text/css">
-<link href="css/fw.misc.css" rel="stylesheet" type="text/css">
+<link href="css/prettify.css" rel="stylesheet" type="text/css">
 <!-- CSS:CUSTOM -->
+<link href="css/themes.css" rel="stylesheet" type="text/css">
 <link href="css/slides.css" rel="stylesheet" type="text/css">
 </head>
-<body class="fw">
+<body class="sbt">
 <!-- BRANDING -->
-<img id="logo" src="images/logo.svg" alt=""/>
+<img id="logo" src="images/logo-sbt.png" alt=""/>
 <!-- WRAPPER -->
 <div id="wrapper"></div>
 <!-- SLIDES -->
 <div id="slides">
+
 <!-- SLIDE -->
 <div class="slide">
-	<h1 class="">Develop for<br><span class="c">Touch Friendliness</span></h1>
-</div>
-
-<!-- SLIDE:COVER -->
-<div class="slide cover">
-	<h1 class="hidden">Video</h1>
-	<video width="90%" height="90%" controls>
-		<source src="media/video1.mp4" type="video/mp4">
-	</video>
+	<h1 class="c bold">Modular UI Development with Angular.js</h1>
 </div>
 
 <!-- SLIDE -->
 <div class="slide">
-    <h1>What we learned from Johnny?</h1>
-    <div class="acenter">
+	<h1>What we learned from Johnny?</h1>
+	<div class="acenter">
 		<p>
 			<span class="c">New Technologies</span><br>
 			<b>&darr;</b><br>
@@ -43,13 +36,13 @@
 			<b>&darr;</b><br>
 			<span class="c">New Interaction Design Paradigm</span><br>
 		</p>
-    </div>
+	</div>
 </div>
 
 <!-- SLIDE -->
 <div class="slide">
-    <h1><span class="small">e.g.</span> Xbox Kinect</h1>
-    <div class="acenter">
+	<h1><span class="small">e.g.</span> Xbox Kinect</h1>
+	<div class="acenter">
 		<p>
 			<span class="c">Motion Sensing Devices</span><br>
 			<b>&darr;</b><br>
@@ -57,28 +50,13 @@
 			<b>&darr;</b><br>
 			<span class="c">Swing, Punch;<br>Push, Pull;<br>Grab;<br>...</span>
 		</p>
-    </div>
+	</div>
 </div>
 
-<!-- SLIDE
-<div class="slide">
-    <h1><span class="small">e.g.</span> Siri <span class="small">(sucks BTW)</span></h1>
-    <div class="acenter">
-		<p>
-			<span class="c">Speech Recognition</span><br>
-			<b>&darr;</b><br>
-			<span class="c">Voice Inputs</span><br>
-			<b>&darr;</b><br>
-			<span class="c">Natural Language<br>User Interface</span>
-		</p>
-    </div>
-</div>
- -->
- 
 <!-- SLIDE -->
 <div class="slide">
-    <h1><span class="small">e.g.</span> iPhone</h1>
-    <div class="acenter">
+	<h1><span class="small">e.g.</span> iPhone</h1>
+	<div class="acenter">
 		<p>
 			<span class="c">Capacitive Touchscreen</span><br>
 			<b>&darr;</b><br>
@@ -86,14 +64,14 @@
 			<b>&darr;</b><br>
 			<span class="c">Tap, Double-Tap;<br>Swipe, Dial;<br>Pinch, Zoom;<br>...</span>
 		</p>
-    </div>
+	</div>
 </div>
 
 <!-- SLIDE -->
 <div class="slide">
-    <h2 class="padNone">Touch Friendliness for Web</h2>
+	<h2 class="padNone">Touch Friendliness for Web</h2>
 	<h1 class="c padTop0">WHY?</h1>
-    <ol>
+	<ol>
 		<li>Most web browsing capable devices now mainly support touch inputs</li>
 		<li>Devices are more accessible and <br>touch feels more natural to us</li>
 		<li>Touch inputs will soon dominate the web<br>(in non-office environments)</li>
@@ -108,22 +86,22 @@
 <!-- SLIDE -->
 <div class="slide">
 	<h1>Touch? <span class="c">No~~~</span></h1>
-	<img src="media/img-dont-touch.gif">
+	<img src="media/201312/img-dont-touch.gif">
 </div>
 
 <!-- SLIDE -->
 <div class="slide">
-    <h1>Problems</h1>
-    <ol>
-        <li><span class="c">Legacy</span> - website updates can't keep up with new technologies</li>
-        <li><span class="c">Backward compatibility</span> - new tech engineers decided to provide legacy support</li>
+	<h1>Problems</h1>
+	<ol>
+		<li><span class="c">Legacy</span> - website updates can't keep up with new technologies</li>
+		<li><span class="c">Backward compatibility</span> - new tech engineers decided to provide legacy support</li>
 		<li><span class="c">Vicious Cycle</span> - web businesses and web developers feel no need investing in new tech support</li>
-    </ol>
+	</ol>
 </div>
 
 <!-- SLIDE -->
 <div class="slide">
-    <h1>Break out of the cycle</h1>
+	<h1>Break out of the cycle</h1>
 	<p class="c padBtm0">if:</p>
 	<p>We value our customers' experience and <br>We provide better services with new techs</p>
 	<p class="c padBtm0">by:</p>
@@ -132,12 +110,12 @@
 
 <!-- SLIDE -->
 <div class="slide">
-    <h1>&lt; Code Examples &nbsp;&frasl;&gt;</h1>
+	<h1>&lt; Code Examples &nbsp;&frasl;&gt;</h1>
 </div>
 
 <!-- SLIDE -->
 <div class="slide">
-    <h1 class="c">CSS</h1>
+	<h1 class="c">CSS</h1>
 	<p>Hover with <span class="c">Modernizr</span> and <span class="c">FastActive</span>
 		<div><pre class="prettyprint">
 .no-touch :hover,
@@ -154,7 +132,7 @@
 
 <!-- SLIDE -->
 <div class="slide">
-    <h1 class="c">JS</h1>
+	<h1 class="c">JS</h1>
 	<p>Input handler with <span class="c">Modernizr</span> and <span class="c">Zepto</span>
 		<div><pre class="prettyprint">
 var _input;
@@ -172,15 +150,15 @@ $btn.on(_input, function(e){
 
 <!-- SLIDE -->
 <div class="slide">
-    <h1 class="c">JS</h1>
+	<h1 class="c">JS</h1>
 	<p>Touch gesture with <span class="c">Hammer.js</span>
 		<div><pre class="prettyprint">
 Hammer(slideshow)
   .on('swipeleft', function(e){
-    // transition to next slide
+	// transition to next slide
   });
   .on('swiperight', function(e){
-    // transition to previous slide
+	// transition to previous slide
   })
 		</pre></div>
 	</p>
@@ -189,42 +167,36 @@ Hammer(slideshow)
 <!-- SLIDE -->
 <div class="slide">
 	<h1>Links</h1>
-    <ul>
-        <li><a href="http://modernizr.com/" target="_blank">Modernizr</a>
+	<ul>
+		<li><a href="http://modernizr.com/" target="_blank">Modernizr</a>
 			<span class="small">(HTML5 &amp; CSS3 feature detection library)</span></li>
 		<li><a href="http://zeptojs.com/" target="_blank">Zepto.js</a>
 			<span class="small">(lightweight jQuery replacement for mobile)</span></li>
-        <li><a href="http://eightmedia.github.io/hammer.js/" target="_blank">Hammer.js</a>
+		<li><a href="http://eightmedia.github.io/hammer.js/" target="_blank">Hammer.js</a>
 			<span class="small">(library for multi-touch gestures)</span></li>
-        <li><a href="https://github.com/jonathanstark/FastActive" target="_blank">FastActive.js</a>
+		<li><a href="https://github.com/jonathanstark/FastActive" target="_blank">FastActive.js</a>
 			<span class="small">(library for responsive touch feedback)</span></li>
-    </ul>
+	</ul>
 </div>
 
 <!-- SLIDE:SUMMARY -->
 <div class="slide summary">
-    <h1 class="c txtUpperCase">THANK YOU!</h1>
-	<h1 class="small">another movie sequence?</h1>
+	<h1 class="c txtUpperCase bold">THANK YOU!</h1>
+	<h1 class="small">and Questions?</h1>
+	<img class="gaga animated" src="images/gaga.png">
 </div>
 
-<!-- SLIDE:COVER -->
-<div class="slide cover">
-	<h1 class="hidden">Video</h1>
-	<video width="90%" height="90%" controls>
-		<source src="media/video2.mp4" type="video/mp4">
-	</video>
-</div>
 </div><!-- /SLIDES -->
 
 <!-- MENU -->
 <a id="menu-btn" class="topcoat-icon-button--quiet"><span class="topcoat-icon topcoat-icon--menu-stack"></span></a>
 <div id="menu">
-    <div class="header">
-        <div class="title">Slides Menu</div>
-    </div>
-    <div class="topcoat-list__container scroller cf">
-        <ol id="list" class="topcoat-list"></ol>
-    </div>
+	<div class="header">
+		<div class="title">Slides Menu</div>
+	</div>
+	<div class="topcoat-list__container scroller cf">
+		<ol id="list" class="topcoat-list"></ol>
+	</div>
 </div><!-- /MENU -->
 
 <!-- JS:LIB -->

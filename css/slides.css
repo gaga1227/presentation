@@ -3,3 +3,34 @@
 /* cover video */
 .slide.cover { background:#000; }
 .slide.cover video { display:block; width:90%; height:90%; position:absolute; top:5%; left:5%; }
+
+/* gaga */
+.gaga {
+	display: block;
+	width: 150px;
+	height: auto;
+	margin: 2em auto 0 auto;
+	border-radius: 50%;
+	-webkit-transform-origin: center;
+	transform-origin: center;
+}
+.gaga.animated {
+	-webkit-animation-name: rotateIn;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-timing-function: ease-out;
+	animation-name: rotateIn;
+	animation-duration: 5s;
+	animation-timing-function: ease-out;
+}
+
+/* animations */
+@-webkit-keyframes rotateIn {
+	0%   { -webkit-transform: translate(-2000px) rotateZ(-1800deg); }
+	90%  { -webkit-transform: translate(10px) rotateZ(12deg); }
+	100% { -webkit-transform: none; }
+}
+@keyframes rotateIn {
+	0%   { transform: translate(-2000px) rotateZ(-1800deg); }
+	90%  { transform: translate(10px) rotateZ(12deg); }
+	100% { transform: none; }
+}

@@ -1,0 +1,42 @@
+/* ==========================================================================
+   Themes
+   Author: JX 201412
+   ========================================================================== */
+
+/* -------------------------------------------------------------------------- */
+/* fw */
+
+/* c */
+.fw .c,
+.newTheme > .fw .c { color:#c23128!important; }
+/* bgc */
+.fw .bgc,
+.newTheme > .fw .bgc { background-color:#c23128!important; }
+/* hoverc */
+.fw .hoverc:hover,
+.newTheme > .fw .hoverc:hover { color:#c23128!important; }
+/* hoverbgc */
+.fw .hoverbgc:hover,
+.newTheme > .fw .hoverbgc:hover { background-color:#c23128!important; }
+/* activec */
+.fw .active.activebgc,
+.newTheme > .fw .active.activebgc { background-color:#c23128!important; }
+
+/* -------------------------------------------------------------------------- */
+/* sbt */
+
+/* c */
+.sbt .c,
+.newTheme > .sbt .c { color:#2ea5dd!important; }
+/* bgc */
+.sbt .bgc,
+.newTheme > .sbt .bgc { background-color:#2ea5dd!important; }
+/* hoverc */
+.sbt .hoverc:hover,
+.newTheme > .sbt .hoverc:hover { color:#2ea5dd!important; }
+/* hoverbgc */
+.sbt .hoverbgc:hover,
+.newTheme > .sbt .hoverbgc:hover { background-color:#2ea5dd!important; }
+/* activec */
+.sbt .active.activebgc,
+.newTheme > .sbt .active.activebgc { background-color:#2ea5dd!important; }
