@@ -70,7 +70,7 @@
         gallery.goToPage(p);
     });
 
-    gallery.onFlip(function () {
+    gallery.onFlip(function (e) {
 
         var el,
             upcoming,
@@ -84,6 +84,9 @@
                 el = gallery.masterPages[i].querySelector('.slide');
                 if (el) gallery.masterPages[i].removeChild(el);
                 el = gallery.masterPages[i].appendChild(slides[upcoming]);
+                if (el.className.indexOf(" loading") != -1) {
+                    el.className = el.className.replace(" loading", "");
+                }
                 el.className += " loading";
             }
         }

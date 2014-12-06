@@ -2,7 +2,14 @@
 
 /* cover video */
 .slide.cover { background:#000; }
-.slide.cover video { display:block; width:90%; height:90%; position:absolute; top:5%; left:5%; }
+.slide.cover video { display:block; position:absolute; top:5%; left:5%; width:90%; height:90%; }
+
+/* iframe */
+.slide iframe {
+	display:block; position:absolute; top:80px; left:calc(50% - 340px); width:680px; height:calc(100% - 160px);
+	border:0; border-radius: 2px;
+	box-shadow: 0 2px 8px 0 rgba(0,0,0,0.15), 0 6px 24px 3px rgba(0,0,0,0.05);
+}
 
 /* gaga */
 .gaga {

@@ -10,6 +10,7 @@
 <link href="css/prettify.css" rel="stylesheet" type="text/css">
 <!-- CSS:CUSTOM -->
 <link href="css/themes.css" rel="stylesheet" type="text/css">
+<link href="css/helper.css" rel="stylesheet" type="text/css">
 <link href="css/slides.css" rel="stylesheet" type="text/css">
 </head>
 <body class="sbt">
@@ -22,166 +23,113 @@
 
 <!-- SLIDE -->
 <div class="slide">
-	<h1 class="c bold">Modular UI Development with Angular.js</h1>
+	<h1>Modular UI Development with <span class="strong c">Angular.js</span></h1>
 </div>
 
 <!-- SLIDE -->
 <div class="slide">
-	<h1>What we learned from Johnny?</h1>
+	<h1 class="c">Modular UI Design</h1>
 	<div class="acenter">
 		<p>
-			<span class="c">New Technologies</span><br>
-			<b>&darr;</b><br>
-			<span class="c">New Interaction Methods</span><br>
-			<b>&darr;</b><br>
-			<span class="c">New Interaction Design Paradigm</span><br>
+			A design approach that constructs systems of<br>independent <span class="strong">UI components</span> that are:
+		</p>
+		<p class="c strong">
+			Scalable<br><br>
+			Reuseable<br><br>
+			Composable<br><br>
+			Consistent interfaces
 		</p>
 	</div>
 </div>
 
 <!-- SLIDE -->
 <div class="slide">
-	<h1><span class="small">e.g.</span> Xbox Kinect</h1>
-	<div class="acenter">
+	<h1 class="c">Implementation for Web</h1>
+	<div class="cfix">
+		<h3>Design Methodologies:</h3>
 		<p>
-			<span class="c">Motion Sensing Devices</span><br>
-			<b>&darr;</b><br>
-			<span class="c">Gesture Inputs</span><br>
-			<b>&darr;</b><br>
-			<span class="c">Swing, Punch;<br>Push, Pull;<br>Grab;<br>...</span>
+			Responsive&nbsp;design, Atomic design,<br>Pattern library, ...
+		</p>
+		<h3>Web Technologies:</h3>
+		<p class="c bold">
+			HTML, CSS, JS, ...
 		</p>
 	</div>
 </div>
 
 <!-- SLIDE -->
 <div class="slide">
-	<h1><span class="small">e.g.</span> iPhone</h1>
-	<div class="acenter">
-		<p>
-			<span class="c">Capacitive Touchscreen</span><br>
-			<b>&darr;</b><br>
-			<span class="c">Touch Inputs</span><br>
-			<b>&darr;</b><br>
-			<span class="c">Tap, Double-Tap;<br>Swipe, Dial;<br>Pinch, Zoom;<br>...</span>
-		</p>
+	<h1 class="c">Web Technologies</h1>
+	<div class="clearfix">
+		<div class="col3 fleft">
+			<h3>HTML</h3>
+			<span class="">Web Components (Custom Elements, Shadow DOM)</span><br>
+			<br>
+			<span class="">Polymer</span><br>
+			<br>
+			<span class="c bold">Angular.js</span>
+		</div>
+		<div class="col3 fleft">
+			<h3>CSS</h3>
+			<span class="" title="Scalable and Modular Architecture for CSS">SMACSS</span><br>
+			<br>
+			<span class="" title="Object Oriented CSS">OOCSS</span><br>
+			<br>
+			<span class="">Sass</span>
+		</div>
+		<div class="col3 fleft">
+			<h3>JS</h3>
+			<span class="">OOP</span><br>
+			<br>
+			<span class="">ECMAScript 5,&nbsp;6</span><br>
+			<br>
+			<span class="">Frameworks</span>
+		</div>
 	</div>
 </div>
 
 <!-- SLIDE -->
 <div class="slide">
-	<h2 class="padNone">Touch Friendliness for Web</h2>
-	<h1 class="c padTop0">WHY?</h1>
-	<ol>
-		<li>Most web browsing capable devices now mainly support touch inputs</li>
-		<li>Devices are more accessible and <br>touch feels more natural to us</li>
-		<li>Touch inputs will soon dominate the web<br>(in non-office environments)</li>
-	</ol>
+	<h1 class="c">Angular Directive</h1>
+	<p>Mimics Web Components</p>
+	<p>Provides encapsulation via Scopes</p>
+	<p>Extends, enhances, and componentize HTML</p>
+	<p>...</p>
 </div>
 
 <!-- SLIDE -->
 <div class="slide">
-	<h1 class="c">So, how touch friendly is web now?</h1>
-</div>
+	<h1 class="c">Demo Candidates</h1>
+	<p>
+		<small>Something extensively used</small><br>
+		<span class="strong">Data table, Timer</span> <span class="c">&#10004; </span><br>
+	</p>
+	<p>
+		<small>Something requires a nicer touch</small><br>
+		<span class="strong">Button responses</span> <span class="c">&#10004; </span><br>
+	</p>
+	<p>
+		<small>Something painful to do</small><br>
+		<span class="strong">Currency Input</span> <span class="c">&#10004; </span><br>
 
-<!-- SLIDE -->
-<div class="slide">
-	<h1>Touch? <span class="c">No~~~</span></h1>
-	<img src="media/201312/img-dont-touch.gif">
-</div>
-
-<!-- SLIDE -->
-<div class="slide">
-	<h1>Problems</h1>
-	<ol>
-		<li><span class="c">Legacy</span> - website updates can't keep up with new technologies</li>
-		<li><span class="c">Backward compatibility</span> - new tech engineers decided to provide legacy support</li>
-		<li><span class="c">Vicious Cycle</span> - web businesses and web developers feel no need investing in new tech support</li>
-	</ol>
-</div>
-
-<!-- SLIDE -->
-<div class="slide">
-	<h1>Break out of the cycle</h1>
-	<p class="c padBtm0">if:</p>
-	<p>We value our customers' experience and <br>We provide better services with new techs</p>
-	<p class="c padBtm0">by:</p>
-	<p>Supporting both traditional and touch inputs while catering for them individually</p>
-</div>
-
-<!-- SLIDE -->
-<div class="slide">
-	<h1>&lt; Code Examples &nbsp;&frasl;&gt;</h1>
-</div>
-
-<!-- SLIDE -->
-<div class="slide">
-	<h1 class="c">CSS</h1>
-	<p>Hover with <span class="c">Modernizr</span> and <span class="c">FastActive</span>
-		<div><pre class="prettyprint">
-.no-touch :hover,
-.no-touch :focus {
-  /* your hover/focus styles */
-}
-.touch :active,
-.touch .active {
-  /* your tap down styles */
-}
-		</pre></div>
 	</p>
 </div>
 
 <!-- SLIDE -->
 <div class="slide">
-	<h1 class="c">JS</h1>
-	<p>Input handler with <span class="c">Modernizr</span> and <span class="c">Zepto</span>
-		<div><pre class="prettyprint">
-var _input;
-if (Modernizr.touch) {
-  _input = 'tap';
-} else {
-  _input = 'click';
-}
-$btn.on(_input, function(e){
-  // your button actions
-});
-		</pre></div>
-	</p>
+	<h1 class="hidden">Demos</h1>
+	<iframe src="http://gaga/_GitHub/_gaga/28_angular/00_demo/001-sbt-ui.html"></iframe>
 </div>
 
 <!-- SLIDE -->
 <div class="slide">
-	<h1 class="c">JS</h1>
-	<p>Touch gesture with <span class="c">Hammer.js</span>
-		<div><pre class="prettyprint">
-Hammer(slideshow)
-  .on('swipeleft', function(e){
-	// transition to next slide
-  });
-  .on('swiperight', function(e){
-	// transition to previous slide
-  })
-		</pre></div>
-	</p>
-</div>
-
-<!-- SLIDE -->
-<div class="slide">
-	<h1>Links</h1>
-	<ul>
-		<li><a href="http://modernizr.com/" target="_blank">Modernizr</a>
-			<span class="small">(HTML5 &amp; CSS3 feature detection library)</span></li>
-		<li><a href="http://zeptojs.com/" target="_blank">Zepto.js</a>
-			<span class="small">(lightweight jQuery replacement for mobile)</span></li>
-		<li><a href="http://eightmedia.github.io/hammer.js/" target="_blank">Hammer.js</a>
-			<span class="small">(library for multi-touch gestures)</span></li>
-		<li><a href="https://github.com/jonathanstark/FastActive" target="_blank">FastActive.js</a>
-			<span class="small">(library for responsive touch feedback)</span></li>
-	</ul>
+	<h1 class="">&lt; Source Code &gt;</h1>
+	<a href="https://github.com/gaga1227/_gaga/tree/main/28_angular/00_demo">https://github.com/gaga1227/_gaga/tree/main/28_angular/00_demo</a>
 </div>
 
 <!-- SLIDE:SUMMARY -->
 <div class="slide summary">
-	<h1 class="c txtUpperCase bold">THANK YOU!</h1>
+	<h1 class="c txtUpperCase">THANK YOU!</h1>
 	<h1 class="small">and Questions?</h1>
 	<img class="gaga animated" src="images/gaga.png">
 </div>
