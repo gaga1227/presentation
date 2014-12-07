@@ -20,6 +20,9 @@
 	border-radius: 50%;
 	-webkit-transform-origin: center;
 	transform-origin: center;
+/*	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;*/
+	opacity: 0;
 }
 .gaga.animated {
 	-webkit-animation-name: rotateIn;
@@ -28,6 +31,7 @@
 	animation-name: rotateIn;
 	animation-duration: 5s;
 	animation-timing-function: ease-out;
+	opacity: 1;
 }
 
 /* animations */
