@@ -1,0 +1,14 @@
+/* iframe */
+.slide iframe.puntersDesktop {
+	left:calc(50% - 500px); width:1000px;
+	border:0; border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+/* brand logo on cover */
+#pc-brand-logo {
+	width: 300px;
+	height: auto;
+	margin: 20px;
+}
