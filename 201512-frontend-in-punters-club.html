@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-<title>Front-end in Punters Club</title>
+<title>Front-end App for Punters Club</title>
 <!-- CSS:LIB -->
 <link href="topcoat/css/topcoat-mobile-light.min.css" rel="stylesheet" type="text/css">
 <link href="css/keypoint.css" rel="stylesheet" type="text/css">
@@ -25,29 +25,30 @@
 <!-- SLIDE -->
 <div class="slide">
 	<h1 class="c">
-		<b>Front-end / UI layer for</b><br>
-		<img id="pc-brand-logo" src="images/201512/logo-ptc.svg" width="180" height="53" alt="">
+		<img id="pc-brand-logo" src="images/201512/logo-ptc.svg" width="180" height="53" alt=""><br>
+		<b>Front-end App</b><br>
+		<small>(UI/Web layer)</small>
 	</h1>
 </div>
 
 <!-- SLIDE -->
 <div class="slide">
 	<h1 class="c">This presentation will talk about</h1>
-	<div class="acenter">
-		<li class="no-bullet">Challenges and solutions</li>
-		<li class="no-bullet">Techs we used</li>
-		<li class="no-bullet">Achievements and learnings</li>
-	</div>
+	<ul class="no-bullet acenter">
+		<li>Challenges and solutions</li>
+		<li>Techs we used</li>
+		<li>Achievements and learnings</li>
+	</ul>
 </div>
 
 <!-- SLIDE -->
 <div class="slide">
-	<h1 class="c">This presentation will<br><b>NOT</b> talk about</h1>
-	<div class="acenter">
-		<li class="no-bullet">Angular.js</li>
-		<li class="no-bullet">Code implementations</li>
-		<li class="no-bullet">Punters feature works on existing products</li>
-	</div>
+	<h1 class="c">...will <b>NOT</b> talk about</h1>
+	<ul class="no-bullet acenter">
+		<li>Angular.js</li>
+		<li>Code implementations</li>
+		<li>PuntersClub feature works on existing products</li>
+	</ul>
 </div>
 
 <!-- SLIDE -->
@@ -63,13 +64,11 @@
 <div class="slide">
 	<h1 class="hidden">Solution</h1>
 	<h3>Solution:</h3>
-	<div class="acenter">
-		<ul>
-			<li>Brand new Sass library from scratch</li>
-			<li>Fully portable (modules, mixins, variable settings)</li>
-			<li>Encapsulated in <small><code class="c">#punters</code></small> namespace</li>
-		</ul>
-	</div>
+	<ul>
+		<li>Brand new Sass library from scratch</li>
+		<li>Fully portable (modules, mixins, variable settings)</li>
+		<li>Encapsulated in <small><code class="c">#punters</code></small> namespace</li>
+	</ul>
 </div>
 
 <!-- SLIDE -->
@@ -85,15 +84,13 @@
 <div class="slide">
 	<h1 class="hidden">Solution</h1>
 	<h3>Solution:</h3>
-	<div class="acenter">
-		<ul>
-			<li>
-				JS driven product/platform query<br>
-				<small>(e.g. <code class="c">'touch mobile ios iphone iosnative'</code> on iPhone native app)</small>
-			</li>
-			<li>Let CSS does the hard work with a touch of JS on view logics</li>
-		</ul>
-	</div>
+	<ul>
+		<li>
+			JS driven product/platform query<br>
+			<small>(e.g. <code class="c">'touch mobile ios iphone iosnative'</code> on iPhone native app)</small>
+		</li>
+		<li>Let CSS does the hard work with a touch of JS on view logics</li>
+	</ul>
 </div>
 
 <!-- SLIDE -->
@@ -112,26 +109,21 @@
 	<div class="clearfix">
 		<div class="col3 fleft">
 			<h3>Mob Web</h3>
-			<span>backbone.js view</span><br>
-			<br>
-			<span><small><code class="c">iframe</code></small></span><br>
-			<br>
-			<span><small><code class="c">window.postMessage</code></small></span><br>
+			<p>backbone.js view</p>
+			<p><small><code class="c">iframe</code></small></p>
+			<p><small><code class="c">window.postMessage</code></small></p>
 		</div>
 		<div class="col3 fleft">
 			<h3>iOS</h3>
-			<span>webViewController</span><br>
-			<br>
-			<span><small><code class="c">UIWebView</code></small></span><br>
-			<br>
-			<span>http call intercepting, window properties</div>
+			<p>webViewController</p>
+			<p><small><code class="c">UIWebView</code></small></p>
+			<p>http call intercepting, window properties</p>
+		</div>
 		<div class="col3 fleft">
 			<h3>Desktop</h3>
-			<span>microsite</span><br>
-			<br>
-			<span><small><code class="c">iframe</code></small></span><br>
-			<br>
-			<span><small><code class="c">window.postMessage</code></small></span><br>
+			<p>microsite</p>
+			<p><small><code class="c">iframe</code></small></p>
+			<p><small><code class="c">window.postMessage</code></small></p>
 		</div>
 	</div>
 </div>
@@ -141,79 +133,76 @@
 	<h1 class="c">Technologies</h1>
 	<div class="clearfix">
 		<div class="col3 fleft">
-			<h3>UI</h3>
-			<span class="">HTML</span><br>
-			<br>
-			<span class="">Angular.js</span><br>
-			<br>
-			<span>Foundation</span><br>
-			<br>
-			<span>Tealium (Proj. Atlas)</span><br>
+			<h3>SPA</h3>
+			<p>Foundation</p>
+			<p>Angular.js</p>
+			<p>Tealium (Proj. Atlas)</p>
 		</div>
 		<div class="col3 fleft">
 			<h3>Development</h3>
-			<span class="">bower, npm</span><br>
-			<br>
-			<span class="">gulp</span><br>
-			<br>
-			<span class="">browser-sync</span><br>
-			<br>
-			<span class="">nodesass(libsass)</span>
+			<p>Bower, NPM</p>
+			<p>Gulp</p>
+			<p>nodesass (libsass)</p>
+			<p>BrowserSync</p>
 		</div>
 		<div class="col3 fleft">
 			<h3>Testing</h3>
-			<span class="">Karma, Jasmine (unit)</span><br>
-			<br>
-			<span class="">Protractor (e2e)</span><br>
-			<br>
-			<span class="">Automation (QA Team)</span>
+			<p>Karma, Jasmine (unit)</p>
+			<p>Protractor, Selenium (e2e)</p>
+			<p>Automation (QA Team)</p>
 		</div>
+	</div>
+</div>
+
+<!-- SLIDE -->
+<div class="slide">
+	<h1 class="c">Services</h1>
+	<div class="acenter">
+		<p><b>ACS</b> (account, auth): <br><small><code class="c">api.sportsbet.com.au</code></small></p>
+		<p><b>PuntersClub business &amp; admin service</b>: <br><small><code class="c">ptcapi.sportsbet.com.au</code></small></p>
+		<p><b>OBMW</b> (bet/transaction history)</p>
 	</div>
 </div>
 
 <!-- SLIDE -->
 <div class="slide">
 	<h1 class="c">Achievements</h1>
-	<div class="acenter">
-		<ul>
-			<li>Foundation for Angular.js based projects</li>
-			<li>Angular.js assets (modular utility and UI components)</li>
-			<li>Feature app integration model (now used by MDT)</li>
-			<li>Live styleguide</li>
-			<li>Backstage in OB backoffice</li>
-		</ul>
-	</div>
+	<ul>
+		<li>Foundation for Angular.js based projects</li>
+		<li>Angular.js assets (modular utility and UI components)</li>
+		<li>Feature app integration model (now used by MDT)</li>
+		<li>Live styleguide</li>
+		<li>Backstage in OB backoffice</li>
+	</ul>
 </div>
 
 <!-- SLIDE -->
 <div class="slide">
 	<h1 class="c">Learnings</h1>
-	<div class="acenter">
-		<ul>
-			<li>UI/UX + Agile</li>
-			<li>Backstage bundled inside main app</li>
-			<li>Developing in full stack environment</li>
-		</ul>
-	</div>
+	<ul>
+		<li>UI/UX + Agile</li>
+		<li>Backstage bundled inside main app</li>
+		<li>Developing in full stack environment</li>
+	</ul>
 </div>
 
 <!-- SLIDE -->
 <div class="slide full">
-	<h1 class="hidden">Punters app demo</h1>
+	<h1 class="hidden">Demo</h1>
 	<iframe id="puntersDemoFrame" class="puntersDesktop" src="https://ptcweb.sb.qa.sbetenv.com/#start"></iframe>
 </div>
 
 <!-- SLIDE -->
 <div class="slide full">
-	<h1 class="hidden">Punters app styleguide</h1>
-	<iframe id="puntersStyleguideFrame" class="puntersDesktop" src="https://ptcweb.sb.qa.sbetenv.com/#styleguide"></iframe>
+	<h1 class="hidden">Styleguide</h1>
+	<iframe id="puntersStyleguideFrame" class="puntersDesktop" src="http://ptcweb.sb.qa.sbetenv.com/#styleguide"></iframe>
 </div>
 
 <!-- SLIDE:SUMMARY -->
 <div class="slide summary">
 	<h1 class="c txtUpperCase">THANK YOU!</h1>
-	<h1 class="small">and Questions?</h1>
-	<img class="gaga" src="images/gaga.png">
+	<p><b>and Questions?</b></p>
+	<img class="gaga" src="images/gaga.png" alt="">
 </div>
 
 </div><!-- /SLIDES -->

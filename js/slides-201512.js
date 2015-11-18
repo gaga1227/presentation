@@ -1,8 +1,8 @@
 //custom interactions in slides
 var initSlideContent = function(index){
-	// 14
+	// 15
 	var $gaga = $('.gaga');
-	if (index == 14) {
+	if (index == 15) {
 		if ($gaga.length) {
 			$gaga.addClass('animated');
 			$gaga[0].offsetWidth;
@@ -22,7 +22,7 @@ var initSlideContent = function(index){
 		}
 
 		var $puntersDemoFrame = $('iframe#puntersDemoFrame');
-		if ($puntersDemoFrame.length && keypoint.getCurrentSlideIndex() === 12) {
+		if ($puntersDemoFrame.length && keypoint.getCurrentSlideIndex() === 13) {
 			var src = $puntersDemoFrame.attr('src'),
 				newsrc = '';
 

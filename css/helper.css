@@ -193,8 +193,11 @@
 .clear { clear:both; }
 
 /* no style list */
-.no-bullet {
-	list-style: none!important;
-	margin-left: 0;
-	padding-left: 0;
+ul.no-bullet,
+ol.no-bullet,
+ul.no-bullet > li,
+ol.no-bullet > li {
+   list-style: none!important;
+   margin-left: 0;
+   padding-left: 0;
 }

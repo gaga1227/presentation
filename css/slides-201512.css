@@ -10,9 +10,9 @@
 
 /* brand logo on cover */
 #pc-brand-logo {
-	width: 300px;
+	width: 240px;
 	height: auto;
-	margin: 20px;
+	margin: -40px 0 0 0;
 }
 
 /* media view */
