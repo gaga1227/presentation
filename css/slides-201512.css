@@ -1,6 +1,8 @@
 /* iframe */
-.slide iframe.puntersDesktop {
-	left:calc(50% - 500px); width:1000px;
+.slide.full iframe.puntersDesktop {
+	position: relative;
+	top:0; left:0;
+	width:100%; height:100%;
 	border:0; border-radius: 0;
 	-webkit-box-shadow: none;
 	box-shadow: none;
@@ -11,4 +13,13 @@
 	width: 300px;
 	height: auto;
 	margin: 20px;
+}
+
+/* media view */
+.mediaView img {
+	display: block;
+	width: auto;
+	height: auto;
+	margin: 0 auto;
+	max-width: 100%;
 }

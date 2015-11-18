@@ -24,124 +24,189 @@
 
 <!-- SLIDE -->
 <div class="slide">
-	<h1 class="c">Front-end / UI layer for
+	<h1 class="c">
+		<b>Front-end / UI layer for</b><br>
 		<img id="pc-brand-logo" src="images/201512/logo-ptc.svg" width="180" height="53" alt="">
 	</h1>
 </div>
 
 <!-- SLIDE -->
 <div class="slide">
-	<h1 class="c">This presentation will talk about:</h1>
+	<h1 class="c">This presentation will talk about</h1>
 	<div class="acenter">
-		<p>&nbsp;</p>
-		<p>challenges and solutions</p>
-		<p>the techs we used</p>
-		<p>achievements and learnings</p>
+		<li class="no-bullet">Challenges and solutions</li>
+		<li class="no-bullet">Techs we used</li>
+		<li class="no-bullet">Achievements and learnings</li>
 	</div>
 </div>
 
 <!-- SLIDE -->
 <div class="slide">
-	<h1 class="c">This presentation will<br><b>NOT</b> talk about:</h1>
+	<h1 class="c">This presentation will<br><b>NOT</b> talk about</h1>
 	<div class="acenter">
-		<p>&nbsp;</p>
-		<p>Angular.js</p>
-		<p>code implementations</p>
+		<li class="no-bullet">Angular.js</li>
+		<li class="no-bullet">Code implementations</li>
+		<li class="no-bullet">Punters feature works on existing products</li>
 	</div>
 </div>
 
 <!-- SLIDE -->
-<div class="slide">
-	<h3 class="mgnBtm0">Challenge 1:</h3>
+<div class="slide wide">
+	<h3 class="mgnBtm0">Challenge 1</h3>
 	<h1 class="c">Brand new look and feel</h1>
-	<div class="acenter">
-		...
-	</div>
-	<h3 class="mgnBtm0">Solution:</h3>
-	<div class="acenter">
-		...
+	<div class="mediaView">
+		<img src="images/201512/img-different-look.png" width="1000" height="408" alt="">
 	</div>
 </div>
 
 <!-- SLIDE -->
 <div class="slide">
-	<h3 class="mgnBtm0">Challenge 2:</h3>
+	<h1 class="hidden">Solution</h1>
+	<h3>Solution:</h3>
+	<div class="acenter">
+		<ul>
+			<li>Brand new Sass library from scratch</li>
+			<li>Fully portable (modules, mixins, variable settings)</li>
+			<li>Encapsulated in <small><code class="c">#punters</code></small> namespace</li>
+		</ul>
+	</div>
+</div>
+
+<!-- SLIDE -->
+<div class="slide">
+	<h3 class="mgnBtm0">Challenge 2</h3>
 	<h1 class="c">Responsive to Products</h1>
 	<div class="acenter">
-		...
-	</div>
-	<h3 class="mgnBtm0">Solution:</h3>
-	<div class="acenter">
-		...
+		to deliver different user experiences (functions and forms) for different products on different platforms
 	</div>
 </div>
 
 <!-- SLIDE -->
 <div class="slide">
-	<h3 class="mgnBtm0">Challenge 2:</h3>
+	<h1 class="hidden">Solution</h1>
+	<h3>Solution:</h3>
+	<div class="acenter">
+		<ul>
+			<li>
+				JS driven product/platform query<br>
+				<small>(e.g. <code class="c">'touch mobile ios iphone iosnative'</code> on iPhone native app)</small>
+			</li>
+			<li>Let CSS does the hard work with a touch of JS on view logics</li>
+		</ul>
+	</div>
+</div>
+
+<!-- SLIDE -->
+<div class="slide">
+	<h3 class="mgnBtm0">Challenge 3</h3>
 	<h1 class="c">Integration into Products</h1>
 	<div class="acenter">
-		...
-	</div>
-	<h3 class="mgnBtm0">Solution:</h3>
-	<div class="acenter">
-		...
+		without code/library conflicts with other products as a sub-module while maintaining a necessary level of communication
 	</div>
 </div>
 
 <!-- SLIDE -->
-<div class="slide">
+<div class="slide wide">
+	<h1 class="hidden">Solution</h1>
+	<h3>Solution:</h3>
+	<div class="clearfix">
+		<div class="col3 fleft">
+			<h3>Mob Web</h3>
+			<span>backbone.js view</span><br>
+			<br>
+			<span><small><code class="c">iframe</code></small></span><br>
+			<br>
+			<span><small><code class="c">window.postMessage</code></small></span><br>
+		</div>
+		<div class="col3 fleft">
+			<h3>iOS</h3>
+			<span>webViewController</span><br>
+			<br>
+			<span><small><code class="c">UIWebView</code></small></span><br>
+			<br>
+			<span>http call intercepting, window properties</div>
+		<div class="col3 fleft">
+			<h3>Desktop</h3>
+			<span>microsite</span><br>
+			<br>
+			<span><small><code class="c">iframe</code></small></span><br>
+			<br>
+			<span><small><code class="c">window.postMessage</code></small></span><br>
+		</div>
+	</div>
+</div>
+
+<!-- SLIDE -->
+<div class="slide wide">
 	<h1 class="c">Technologies</h1>
 	<div class="clearfix">
 		<div class="col3 fleft">
 			<h3>UI</h3>
+			<span class="">HTML</span><br>
+			<br>
 			<span class="">Angular.js</span><br>
 			<br>
-			<span class="">Foundation</span><br>
+			<span>Foundation</span><br>
 			<br>
-			<span class="">...</span>
+			<span>Tealium (Proj. Atlas)</span><br>
 		</div>
 		<div class="col3 fleft">
 			<h3>Development</h3>
-			<span class="">bower, npm, gulp</span><br>
+			<span class="">bower, npm</span><br>
+			<br>
+			<span class="">gulp</span><br>
 			<br>
 			<span class="">browser-sync</span><br>
 			<br>
-			<span class="">nodesass -> libsass</span>
+			<span class="">nodesass(libsass)</span>
 		</div>
 		<div class="col3 fleft">
 			<h3>Testing</h3>
-			<span class="">Karma and Jasmine (unit)</span><br>
+			<span class="">Karma, Jasmine (unit)</span><br>
 			<br>
-			<span class="">Protractor for (e2e)</span><br>
+			<span class="">Protractor (e2e)</span><br>
 			<br>
-			<span class="">Automation test (QA Team)</span>
+			<span class="">Automation (QA Team)</span>
 		</div>
 	</div>
 </div>
 
 <!-- SLIDE -->
 <div class="slide">
-	<h1 class="">Achievements:</h1>
+	<h1 class="c">Achievements</h1>
 	<div class="acenter">
-		<span class="">Styleguide</span><br>
-		<span class="">Angular.js stuff</span><br>
-		<span class="">Integration to products</span><br>
-		<span class="">...</span>
+		<ul>
+			<li>Foundation for Angular.js based projects</li>
+			<li>Angular.js assets (modular utility and UI components)</li>
+			<li>Feature app integration model (now used by MDT)</li>
+			<li>Live styleguide</li>
+			<li>Backstage in OB backoffice</li>
+		</ul>
 	</div>
 </div>
 
 <!-- SLIDE -->
 <div class="slide">
-	<h1 class="">Learnings:</h1>
+	<h1 class="c">Learnings</h1>
 	<div class="acenter">
-		...
+		<ul>
+			<li>UI/UX + Agile</li>
+			<li>Backstage bundled inside main app</li>
+			<li>Developing in full stack environment</li>
+		</ul>
 	</div>
 </div>
 
 <!-- SLIDE -->
-<div class="slide">
-	<iframe id="puntersFrame" class="puntersDesktop" src="https://ptcweb.sb.qa.sbetenv.com/"></iframe>
+<div class="slide full">
+	<h1 class="hidden">Punters app demo</h1>
+	<iframe id="puntersDemoFrame" class="puntersDesktop" src="https://ptcweb.sb.qa.sbetenv.com/#start"></iframe>
+</div>
+
+<!-- SLIDE -->
+<div class="slide full">
+	<h1 class="hidden">Punters app styleguide</h1>
+	<iframe id="puntersStyleguideFrame" class="puntersDesktop" src="https://ptcweb.sb.qa.sbetenv.com/#styleguide"></iframe>
 </div>
 
 <!-- SLIDE:SUMMARY -->

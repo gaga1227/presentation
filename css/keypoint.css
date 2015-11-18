@@ -218,6 +218,7 @@ img.full {
     position: absolute;
     right: 50px;
     height: 50px;
+    z-index: 9999999;
 }
 
 .scroller {

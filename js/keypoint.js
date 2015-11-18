@@ -18,13 +18,22 @@
 
 	//bind key navigation behaviors
 	window.onkeyup = function (event) {
+		// right
 		if (event.keyCode === 39) {
 			return gallery.next();
 		}
+		// left
 		if (event.keyCode === 37) {
 			return gallery.prev();
 		}
-	}
+		// ESC
+		if (event.keyCode === 27) {
+			// close menu if open
+			if ($("#wrapper").length) {
+				$("#wrapper").trigger('click');
+			}
+		}
+	};
 
 	//bind menu behaviors
 	$("#menu-btn").on('click', toggleMenu);
@@ -44,7 +53,13 @@
 		if ( typeof(initSlideContent) != 'undefined' ) {
 			initSlideContent(p);
 		}
-	}
+	};
+
+	//get current slide index
+	window.keypoint = {};
+	window.keypoint.getCurrentSlideIndex = function () {
+		return parseInt(window.location.hash.substr(1)) || 0;
+	};
 
 	//init pretty print
 	prettyPrint();
@@ -54,7 +69,7 @@
 
 	//construct menu
 	var liStr = "";
-	for (var i=0; i<slides.length; i++) {
+	for (i = 0; i<slides.length; i++) {
 		var h1 = $("h1", slides[i]);
 		liStr += '<li class="topcoat-list__item"><a href="#' + i + '">' + (h1[0] ? h1[0].innerText : '&nbsp;') + "</a></li>";
 	}
@@ -68,14 +83,14 @@
 			$menu.addClass("visible");
 		}
 		return false;
-	};
+	}
 
 	//init gallery with slides
 	gallery = new SwipeView('#wrapper', { numberOfPages: slides.length });
 
 	//add slide contents to master pages
 	for (i = 0; i < 3; i++) {
-		page = i == 0 ? slides.length - 1 : i - 1;
+		page = i === 0 ? slides.length - 1 : i - 1;
 		gallery.masterPages[i].appendChild(slides[page]);
 	}
 
@@ -113,4 +128,4 @@
 			}
 		}
 	});
-}())
+}());

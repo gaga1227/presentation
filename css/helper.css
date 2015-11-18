@@ -191,3 +191,10 @@
 /* Clearer */
 .clearer { float:none; clear:both; height:0; line-height:0; overflow:hidden; visibility:hidden; }
 .clear { clear:both; }
+
+/* no style list */
+.no-bullet {
+	list-style: none!important;
+	margin-left: 0;
+	padding-left: 0;
+}
