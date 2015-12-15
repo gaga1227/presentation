@@ -23,3 +23,10 @@
 	margin: 0 auto;
 	max-width: 100%;
 }
+
+/* punters four image */
+.puntersFour {
+	display: block;
+	width: 100%;
+	height: auto;
+}
